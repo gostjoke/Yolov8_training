@@ -1,0 +1,9 @@
+### if have cuda 12.1
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip uninstall torchvision
+pip install torchvision --index-url https://download.pytorch.org/whl/cu121
+
+
+yolo task=detect mode=predict model=yolov8n.pt source=image1.jpg save_txt=True save_crop=True
+
+yolo task=detect mode=predict model=yolov8n.pt source=demo.mp4 save_txt=True save_crop=True
